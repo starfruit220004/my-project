@@ -169,12 +169,8 @@ function StopwatchWithTimer() {
           <button onClick={lap} className="lap-button">Lap</button>
         </div>
 
-        {/* Laps at bottom */}
-        {laps.length > 0 && (
-          <div className="laps bottom-center">
-            <Lap laps={laps} />
-          </div>
-        )}
+        {laps.length > 0 && <Lap laps={laps} />}
+
       </div>
     </div>
   );
