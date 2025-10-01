@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from 'react';
+import "../assets/css/lap.css";
 
-function Lap({ laps }) {
-  const [timeList, setTimeList] = useState([]);
 
-  useEffect(() => {
-    if (laps && laps.length > 0) {
-      setTimeList(laps);
-    } else {
-      setTimeList([]);
-    }
-  }, [laps]);
+function Lap({time}){   
+    const [timeList, setTimeList] = useState([]);
 
-  return (
-    <div className="laps">
-      <ul>
-        {timeList.map((time, index) => (
-          <li key={index}>
-            Lap {index + 1}: {time}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+    useEffect(() => {
+        if(!time) setTimeList([]);
+        setTimeList(prevTime => [time, ...prevTime]);
+    }, [time]);
+    
+    const listTime = timeList.map((time, index) => (
+        <li key={index}>{time}</li>
+    ))
+
+    return(
+
+        <div className="lap-box">
+            <h1>Laps</h1>
+            <p>{listTime}</p>
+
+        </div>
+    )
 }
 
 export default Lap;

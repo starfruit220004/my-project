@@ -1,12 +1,13 @@
 import Header from './components/Header.jsx'
-import StopwatchWithTimer from './components/StopwatchWithTimer.jsx'
-
+import Lap from './components/Lap.jsx'
+import Stopwatch from './components/Stopwatch.jsx'
 
 function App() {
 
   return (
     <>
-      <StopwatchWithTimer/>
+      <Header/>
+      <Stopwatch/>
     </>
   )
 }

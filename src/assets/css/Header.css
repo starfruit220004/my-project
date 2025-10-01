@@ -5,7 +5,7 @@ body{
     
 }
 .header{
-  background-color: rgb(228, 228, 228);
+  background: linear-gradient(135deg, #363636, #000000);
   height: 5em;
   padding: 15px;
   display: flex;
@@ -14,6 +14,7 @@ body{
   
   h1{
     font-size: 3rem;
-    color: #333;
+    color: #ffffff;
+    font-family: Verdana;
   }
 }

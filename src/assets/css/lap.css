@@ -1,0 +1,27 @@
+.lap-box{
+    border: 3px solid black;
+    
+    min-width: 250px;
+    height: 260px;
+    overflow-y: auto;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #000000, #111111);
+    color: white;
+    scrollbar-width: thin;
+    position: absolute;
+    right: 20px;
+    scroll-behavior: smooth;
+
+    h1{
+        font-family: Verdana;
+    }
+
+    p{
+        font-size: 1.1em;
+        font-weight: 600;
+        font-family: Verdana;
+        line-height: 1.8rem;
+    }
+    
+}
